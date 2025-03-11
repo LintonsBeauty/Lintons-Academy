@@ -22,16 +22,15 @@ const jobs = [
     description: `✨ We’re Hiring ✨
 
 Responsibilities:
-● Assist with promotions and sales of services aligned to the season and Lintons Beauty World internal marketing calendar.
-● Evaluat and establish sales goals in collaboration with the GM sales and Area Manager.
-● Ensure that therapists generate quality content that will be used on Facebook, Instagram platforms for company and individuals.
-● Drive the team to achieve sales targets by offering services & sell products in line with their areas of specialization.
-● Spearhead marketing activities within the location.
-● Maintain high standards of customer service.
-● Handle general spa administration duties.
+● Support seasonal promotions and sales per Lintons Beauty World’s marketing calendar.
+● Set and review sales targets with the GM Sales and Area Manager.
+● Ensure therapists create quality content for Facebook and Instagram.
+● Motivate the team to meet sales goals through services and product sales.
+● Lead marketing efforts within the location.
+● Uphold exceptional customer service standards.
+● Oversee general spa administration tasks.
 
 Qualifications:
-● Diploma or degree graduate from recognized institution
 ● Diploma/Bachelor's Degree in Beauty Therapy or Cosmetology from recognized institution.
 ● 3+ years managing a luxury brand or spa.
 ● Passion for the service delivery and customers.
