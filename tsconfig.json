@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "strict": true,
+    "allowJs": true,
+    "noEmit": true,
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true,
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["@react-router/node", "vite/client"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "#/*": ["./*"],
+      "assets/*": ["./assets/*"]
+    },
+    "rootDirs": [".", "./.react-router/types"]
+  },
+  "include": ["env.d.ts", "**/*.ts", "**/*.tsx", ".react-router/types/**/*"],
+  "exclude": ["node_modules", "scripts", "edge-function"]
+}
