@@ -21,8 +21,6 @@ const jobs = [
     type: 'Full-time',
     description: `✨ We’re Hiring ✨
 
-Join our team of experts and passionate stylists catering to natural hair!
-
 Responsibilities:
 ● Assist with promotions and sales of services aligned to the season and Lintons Beauty World internal marketing calendar.
 ● Evaluat and establish sales goals in collaboration with the GM sales and Area Manager.
