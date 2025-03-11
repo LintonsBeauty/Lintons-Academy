@@ -15,59 +15,37 @@ import { useMemo, useRef, useState } from 'react'
 import Fuse from 'fuse.js'
 
 const jobs = [
-
   {
-    title: 'Nail Technician - Karim Salon and Spa',
-    location: 'Hurlingam Plaza, Nairobi, Kenya',
+    title: 'SPA MANAGER',
+    location: 'Nairobi, Kenya',
     type: 'Full-time',
-    description: `💅 We’re Hiring Nail Techs! 💅
+    description: `✨ We’re Hiring ✨
 
-Be part of our beautiful salon experience!
+Join our team of experts and passionate stylists catering to natural hair!
 
-Requirements:
-● Proficient in manicures, pedicures, and nail art
-● Detail-oriented and creative
-● Reliable, professional, and friendly
-● Passionate about delivering exceptional service
+Responsibilities:
+● Assist with promotions and sales of services aligned to the season and Lintons Beauty World internal marketing calendar.
+● Evaluat and establish sales goals in collaboration with the GM sales and Area Manager.
+● Ensure that therapists generate quality content that will be used on Facebook, Instagram platforms for company and individuals.
+● Drive the team to achieve sales targets by offering services & sell products in line with their areas of specialization.
+● Spearhead marketing activities within the location.
+● Maintain high standards of customer service.
+● Handle general spa administration duties.
 
-Perks:
-● Inspiring, supportive work environment
-● Room to grow your skills and creativity
+Qualifications:
+● Diploma or degree graduate from recognized institution
+● Diploma/Bachelor's Degree in Beauty Therapy or Cosmetology from recognized institution.
+● 3+ years managing a luxury brand or spa.
+● Passion for the service delivery and customers.
+● Excellent people skills.
 
 To Apply:
 ● Send in your CV and Portfolio (images of your work)
 
 📧 Apply now 📧
-karimsalonandspa@gmail.com`,
+hr@lintonsbeauty.com`,
     link: '',
-  },
-  {
-    title: 'Salon Manager - Karim Salon and Spa',
-    location: 'Hurlingam Plaza, Nairobi, Kenya',
-    type: 'Full-time',
-    shortDescription: '',
-    description: `🌟 We’re Hiring a Salon Manager! 🌟
-
-Lead Karim Salon catering to natural hair and beauty!
-
-Requirements:
-● Proven experience in salon management or similar role
-● Strong leadership and organizational skills
-● Passionate about team building and customer service
-● Ability to manage scheduling, inventory, and operations
-
-Perks:
-● Be part of an exciting new salon launch
-● Collaborative and empowering work environment
-● Opportunities for professional growth
-
-To Apply:
-● Send in your CV and a recommendation letter
-
-📧 Apply now 📧
-karimsalonandspa@gmail.com`,
-    link: '',
-  },
+  }
 
 ]
 const jobFuse = new Fuse(jobs, {
