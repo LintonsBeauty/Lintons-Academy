@@ -15,31 +15,7 @@ import { useMemo, useRef, useState } from 'react'
 import Fuse from 'fuse.js'
 
 const jobs = [
-  {
-    title: 'Braider - Karim Salon and Spa',
-    location: 'Hurlingam Plaza, Nairobi, Kenya',
-    type: 'Full-time',
-    description: `✨ We’re Hiring Braiders!@.. ✨
 
-Join our team of experts and passionate stylists catering to natural hair!
-
-Requirements:
-● Skilled in braiding (cornrows, box braids, twists, etc.)
-● Reliable and professional
-● Passionate about creating stunning styles
-● Team-oriented with great customer service
-
-Perks:
-● Supportive, creative work environment
-● Opportunities to grow your skills
-
-To Apply:
-● Send in your CV and Portfolio (images of your work)
-
-📧 Apply now 📧
-karimsalonandspa@gmail.com`,
-    link: '',
-  },
   {
     title: 'Nail Technician - Karim Salon and Spa',
     location: 'Hurlingam Plaza, Nairobi, Kenya',
