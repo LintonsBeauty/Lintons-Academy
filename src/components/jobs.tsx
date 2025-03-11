@@ -19,7 +19,7 @@ const jobs = [
     title: 'Braider - Karim Salon and Spa',
     location: 'Hurlingam Plaza, Nairobi, Kenya',
     type: 'Full-time',
-    description: `✨ We’re Hiring Braiders!@ ✨
+    description: `✨ We’re Hiring Braiders!@.. ✨
 
 Join our team of experts and passionate stylists catering to natural hair!
 
