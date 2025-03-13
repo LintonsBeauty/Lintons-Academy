@@ -39,6 +39,8 @@ Qualifications:
 To Apply:
 ● Send in your CV and Portfolio to hr@lintonsbeauty.com
 
+📧 Apply now 📧
+hr@lintonsbeauty.com`,
     link: '',
   }
 
