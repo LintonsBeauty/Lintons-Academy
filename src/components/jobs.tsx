@@ -38,7 +38,7 @@ Qualifications:
 
 To Apply:
 ● Send in your CV and Portfolio to hr@lintonsbeauty.com`,
-    link: '',
+    link: 'https://forms.gle/xwHFXjwcT7w1WeKm8',
   },
 
   {
@@ -61,7 +61,7 @@ Must have:
 
 To Apply:
 ● Contact us on +254745933924`,
-    link: '',
+    link: 'https://forms.gle/xwHFXjwcT7w1WeKm8',
   },
 
 ]
