@@ -19,18 +19,48 @@ const jobs = [
     title: 'SPA MANAGER',
     location: 'Nairobi, Kenya',
     type: 'Full-time',
-    description: `✨ We’re Hiring ✨\n\nResponsibilities:\n● Support seasonal promotions and sales per Lintons Beauty World’s marketing calendar.\n● Set and review sales targets with the GM Sales and Area Manager.\n● Ensure therapists create quality content for Facebook and Instagram.\n● Motivate the team to meet sales goals through services and product sales.\n● Lead marketing efforts within the location.\n● Uphold exceptional customer service standards.\n\nQualifications:\n● Diploma/Bachelor's Degree in Beauty Therapy or Cosmetology from recognized institution.\n● 3+ years managing a luxury brand or spa.\n● Passion for the service delivery and customers.\n\nTo Apply:\n● Send in your CV and Portfolio to hr@lintonsbeauty.com\n● Apply here: https://forms.gle/xwHFXjwcT7w1WeKm8`,
+    description: `✨ We’re Hiring ✨
+
+Responsibilities:
+● Drive sales & promotions.
+● Ensure quality social media content.
+● Maintain high customer service standards.
+
+Qualifications:
+● Diploma/Bachelor's Degree in Beauty Therapy or Cosmetology from recognized institution.
+● 3+ years managing a luxury brand or spa.
+● Passion for service delivery and customers.
+
+Apply here: [https://forms.gle/xwHFXjwcT7w1WeKm8](https://forms.gle/xwHFXjwcT7w1WeKm8)
+
+To Apply:
+● Send in your CV and Portfolio to hr@lintonsbeauty.com`,
     link: '',
   },
   {
     title: 'We are Hiring',
     location: 'Jacaranda Gardens, Kamiti Rd. Nairobi, Kenya',
     type: 'Full-time',
-    description: `✨ The following roles are available for application ✨\n\nRoles:\n● Reception Assistant\n● Barber\n● Hairdressers\n● Nail Technician\n● Makeup Artist\n\nMust have:\n● Mature + Experienced.\n● Active FB/TikTok/Instagram account\n\nTo Apply:\n● Contact us on +254745933924\n● Apply here: https://forms.gle/xwHFXjwcT7w1WeKm8`,
+    description: `✨ The following roles are available for application ✨
+
+Roles:
+● Reception Assistant
+● Barber
+● Hairdressers
+● Nail Technician
+● Makeup Artist
+
+Must have:
+● Mature + Experienced.
+● Active FB/TikTok/Instagram account
+
+Apply here: [https://forms.gle/xwHFXjwcT7w1WeKm8](https://forms.gle/xwHFXjwcT7w1WeKm8)
+
+To Apply:
+● Contact us on +254745933924`,
     link: '',
   },
 ]
-
 const jobFuse = new Fuse(jobs, {
   keys: ['title', 'location', 'type'],
   threshold: 0.4,
@@ -38,7 +68,7 @@ const jobFuse = new Fuse(jobs, {
 })
 
 export function JobList() {
-  const inputRef = useRef(null)
+  const inputRef = useRef<HTMLInputElement>(null)
   const [search, setSearch] = useState('')
 
   const filteredJobs = useMemo(
@@ -47,7 +77,7 @@ export function JobList() {
   )
 
   return (
-    <div className="h-full min-h-screen w-full max-w-screen-lg p-8 pt-40 md:max-w-screen-xl">
+    <div className="h-full min-h-screen w-full max-w-screen-lg items-center p-8 pt-40 2xl:max-w-screen-xl">
       <div className="relative mb-8">
         <Input
           className="h-14 rounded-xl pl-14 pr-28 md:text-lg"
@@ -64,7 +94,7 @@ export function JobList() {
           Search
         </Button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center gap-6">
         {map(filteredJobs, (job) => (
           <Dialog>
             <DialogTrigger className="rounded-xl w-full">
@@ -92,10 +122,10 @@ export function JobList() {
               <DialogDescription className="whitespace-pre-wrap text-base">
                 {job.description}
               </DialogDescription>
-              <div className="mt-4 flex justify-center">
+              <div className="mt-4 flex w-full items-center justify-center">
                 <Button
                   asChild
-                  className="font-base h-auto rounded-xl px-8 py-3 text-lg uppercase text-black bg-blue-500 hover:bg-blue-600"
+                  className="font-base h-auto rounded-xl px-8 py-3 text-lg uppercase text-black bg-gray-200 hover:bg-gray-300"
                 >
                   <a target="_blank" href="https://forms.gle/xwHFXjwcT7w1WeKm8">
                     Apply Now
