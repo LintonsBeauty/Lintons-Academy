@@ -37,12 +37,32 @@ Qualifications:
 ● Excellent people skills.
 
 To Apply:
-● Send in your CV and Portfolio to hr@lintonsbeauty.com
-
-📧 Apply now 📧
-hr@lintonsbeauty.com`,
+● Send in your CV and Portfolio to hr@lintonsbeauty.com`,
     link: '',
-  }
+  },
+
+  {
+    title: 'We are Hiring',
+    location: 'Jacaranda Gardens, Kamiti Rd. Nairobi, Kenya',
+    type: 'Full-time',
+    description: `✨ The following roles are available for application ✨
+
+
+Roles:
+● Reception Assistant
+● Barber
+● Hairdressers
+● Nail Technician
+● Makeup Artist
+
+Must have:
+● Mature + Experienced.
+● Active FB/TikTok/Instagram account
+
+To Apply:
+● Contact us on +254745933924`,
+    link: '',
+  },
 
 ]
 const jobFuse = new Fuse(jobs, {
