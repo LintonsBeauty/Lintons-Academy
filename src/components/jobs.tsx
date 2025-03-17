@@ -35,8 +35,9 @@ Qualifications:
 ● Passion for the service delivery and customers.
 
 To Apply:
-● Send in your CV and Portfolio to hr@lintonsbeauty.com/https://forms.gle/xwHFXjwcT7w1WeKm8`,
-    link: '',
+● Send in your CV and Portfolio to hr@lintonsbeauty.com
+● Apply here: https://forms.gle/xwHFXjwcT7w1WeKm8`,
+    link: 'https://forms.gle/xwHFXjwcT7w1WeKm8',
   },
 
   {
@@ -44,7 +45,6 @@ To Apply:
     location: 'Jacaranda Gardens, Kamiti Rd. Nairobi, Kenya',
     type: 'Full-time',
     description: `✨ The following roles are available for application ✨
-
 
 Roles:
 ● Reception Assistant
@@ -58,10 +58,10 @@ Must have:
 ● Active FB/TikTok/Instagram account
 
 To Apply:
-● Contact us on +254745933924/https://forms.gle/xwHFXjwcT7w1WeKm8`,
-    link: '',
+● Contact us on +254745933924
+● Apply here: https://forms.gle/xwHFXjwcT7w1WeKm8`,
+    link: 'https://forms.gle/xwHFXjwcT7w1WeKm8',
   },
-
 ]
 const jobFuse = new Fuse(jobs, {
   keys: ['title', 'location', 'type'],
@@ -124,26 +124,18 @@ export function JobList() {
               <DialogDescription className="whitespace-pre-wrap text-base">
                 {job.description}
               </DialogDescription>
-              {/* {course.duration && (
-                  <div className="text-center text-lg font-bold uppercase opacity-50">
-                    Duration: {course.duration}{' '}
-                    {course.internshipDuration &&
-                      `+ ${course.internshipDuration} Internship`}
-                  </div>
-                )} */}
-              {/* <div className="mt-2 flex w-full items-center justify-center">
-                <Button
-                  asChild
-                  className="font-base h-auto rounded-xl px-8 py-3 text-lg uppercase text-black"
-                >
-                  <a
-                    target="_blank"
-                    href="https://cloud.lintonsacademy.com/admissions"
+              {job.link && (
+                <div className="mt-2 flex w-full items-center justify-center">
+                  <Button
+                    asChild
+                    className="font-base h-auto rounded-xl px-8 py-3 text-lg uppercase text-black"
                   >
-                    Apply Now
-                  </a>
-                </Button>
-              </div> */}
+                    <a target="_blank" href={job.link}>
+                      Apply Now
+                    </a>
+                  </Button>
+                </div>
+              )}
             </DialogContent>
           </Dialog>
         ))}
