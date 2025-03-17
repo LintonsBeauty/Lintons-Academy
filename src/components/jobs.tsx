@@ -31,10 +31,7 @@ Qualifications:
 ● 3+ years managing a luxury brand or spa.
 ● Passion for service delivery and customers.
 
-Apply here: [https://forms.gle/xwHFXjwcT7w1WeKm8](https://forms.gle/xwHFXjwcT7w1WeKm8)
-
-To Apply:
-● Send in your CV and Portfolio to hr@lintonsbeauty.com`,
+Apply here: [https://forms.gle/xwHFXjwcT7w1WeKm8](https://forms.gle/xwHFXjwcT7w1WeKm8)`,
     link: '',
   },
   {
