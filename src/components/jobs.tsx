@@ -29,9 +29,7 @@ Responsibilities:
 Qualifications:
 ● Diploma/Bachelor's Degree in Beauty Therapy or Cosmetology from recognized institution.
 ● 3+ years managing a luxury brand or spa.
-● Passion for service delivery and customers.
-
-Apply here: [https://forms.gle/xwHFXjwcT7w1WeKm8](https://forms.gle/xwHFXjwcT7w1WeKm8)`,
+● Passion for service delivery and customers.`,
     link: '',
   },
   {
@@ -49,12 +47,7 @@ Roles:
 
 Must have:
 ● Mature + Experienced.
-● Active FB/TikTok/Instagram account
-
-Apply here: [https://forms.gle/xwHFXjwcT7w1WeKm8](https://forms.gle/xwHFXjwcT7w1WeKm8)
-
-To Apply:
-● Contact us on +254745933924`,
+● Active FB/TikTok/Instagram account`,
     link: '',
   },
 ]
