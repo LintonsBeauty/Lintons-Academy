@@ -28,17 +28,15 @@ Responsibilities:
 ● Motivate the team to meet sales goals through services and product sales.
 ● Lead marketing efforts within the location.
 ● Uphold exceptional customer service standards.
-● Oversee general spa administration tasks.
 
 Qualifications:
 ● Diploma/Bachelor's Degree in Beauty Therapy or Cosmetology from recognized institution.
 ● 3+ years managing a luxury brand or spa.
 ● Passion for the service delivery and customers.
-● Excellent people skills.
 
 To Apply:
-● Send in your CV and Portfolio to hr@lintonsbeauty.com`,
-    link: 'https://forms.gle/xwHFXjwcT7w1WeKm8',
+● Send in your CV and Portfolio to hr@lintonsbeauty.com/https://forms.gle/xwHFXjwcT7w1WeKm8`,
+    link: '',
   },
 
   {
@@ -60,8 +58,8 @@ Must have:
 ● Active FB/TikTok/Instagram account
 
 To Apply:
-● Contact us on +254745933924`,
-    link: 'https://forms.gle/xwHFXjwcT7w1WeKm8',
+● Contact us on +254745933924/https://forms.gle/xwHFXjwcT7w1WeKm8`,
+    link: '',
   },
 
 ]
