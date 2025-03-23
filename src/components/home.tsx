@@ -1,7 +1,7 @@
 // import CarouselImages3 from 'assets/images/shutterstock_2325555133.jpg?w=480;640;1280;1980&format=webp'
 import LogoWhite from 'assets/images/Hair Academy Logo White.png?w=480;640;1280;1980&format=webp'
 // import IndexBackgroundImage from 'assets/images/salone-parrucchiere_web.png?w=480;640;1280;1980&format=webp'
-import IndexBackgroundImage from 'assets/images/Hair School.jpg?w=480;640;1280;1980&format=webp'
+import IndexBackgroundImage from 'assets/images/Hair Schooll.jpg?w=480;640;1280;1980&format=webp'
 import { join, map } from 'lodash-es'
 import { FiChevronDown } from 'react-icons/fi'
 
