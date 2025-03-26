@@ -23,7 +23,7 @@ export function Home() {
       id="home"
       className="relative flex h-screen min-h-screen w-full flex-col items-center justify-center text-primary-foreground"
     >
-      <picture className="h-full w-full">
+      <picture className="absolute inset-0 h-full w-full">
         <source
           srcSet={join(
             map(
@@ -35,11 +35,11 @@ export function Home() {
         />
         <img
           src={images[currentImage][0]}
-          className="h-full w-full object-cover transition-opacity duration-1000"
+          className="h-full w-full object-cover object-center transition-opacity duration-1000"
         />
       </picture>
       <div className="absolute flex h-full w-full items-center justify-center bg-black/60 flex-col">
-        <picture className="h-auto w-4/5 md:w-3/5 lg:w-1/2">
+        <picture className="h-auto w-4/5 md:w-3/5 lg:w-1/3">
           <source
             srcSet={join(
               map(
@@ -49,13 +49,13 @@ export function Home() {
               ', '
             )}
           />
-          <img src={LogoWhite[0]} className="h-auto w-full object-cover" />
+          <img src={LogoWhite[0]} className="h-auto w-full object-contain" />
         </picture>
         <a
           href="https://forms.gle/MJreqbGZV4uVXfvMA"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 bg-primary text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-lg hover:bg-primary-dark transition"
+          className="mt-4 bg-primary text-white px-4 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-lg font-semibold shadow-lg hover:bg-primary-dark transition"
         >
           Apply Now
         </a>
