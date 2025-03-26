@@ -2,6 +2,7 @@
 import LogoWhite from 'assets/images/Hair Academy Logo White.png?w=480;640;1280;1980&format=webp'
 // import IndexBackgroundImage from 'assets/images/salone-parrucchiere_web.png?w=480;640;1280;1980&format=webp'
 import IndexBackgroundImage from 'assets/images/ACD MASTERCLASS 1.png?w=480;640;1280;1980&format=webp'
+import IndexBackgroundImage from 'assets/images/ACD MASTERCLASS 2.png?w=480;640;1280;1980&format=webp'
 import { join, map } from 'lodash-es'
 import { FiChevronDown } from 'react-icons/fi'
 
