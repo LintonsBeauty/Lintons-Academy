@@ -26,7 +26,7 @@ export function Footer() {
         Westlands, Kenrail Towers, 3rd floor, Northern wing/ Mombasa, SBS Mall
       </div>
       <div className="mt-8 text-center text-sm md:mt-12 md:text-base">
-        © Lintons Academy, 2024. All Rights Reserved
+        © Lintons Academy, 2025. All Rights Reserved
       </div>
     </div>
   )

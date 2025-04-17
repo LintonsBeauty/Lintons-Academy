@@ -1,56 +1,66 @@
-import { useState, useEffect } from 'react'
-import LogoWhite from 'assets/images/Hair Academy Logo White.png?w=480;640;1280;1980&format=webp'
-import Image1 from 'assets/images/backdrop.png?w=480;640;1280;1980&format=webp'
-import { join, map } from 'lodash-es'
-import { FiChevronDown } from 'react-icons/fi'
+import { useState, useEffect } from 'react';
+import LogoWhite from 'assets/images/Hair Academy Logo White.png?w=480;640;1280;1980&format=webp';
+import Image1 from 'assets/images/backdrop.png?w=480;640;1280;1980&format=webp';
+import { FiChevronDown } from 'react-icons/fi';
 
-const images = [Image1]
-const widths = [480, 640, 1280, 1980, 853]
+const images = [Image1];
+const widths = [480, 640, 1280, 1980, 853];
 
 export function Home() {
-  const [currentImage, setCurrentImage] = useState(0)
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
+    // Preload all images to ensure smooth transitions
+    const preloadImages = () => {
+      images.forEach((image) => {
+        const img = new Image();
+        img.src = image;
+      });
+    };
+
+    preloadImages();
+
+    // Set interval for background image rotation
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length)
-    }, 5000)
-    return () => clearInterval(interval)
-  }, [])
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000);
+
+    // Cleanup interval on component unmount
+    return () => {
+      try {
+        clearInterval(interval);
+      } catch (error) {
+        console.error("Error clearing interval:", error);
+      }
+    };
+  }, []);
 
   return (
-    <div
+    <main
       id="home"
       className="relative flex h-screen min-h-screen w-full flex-col items-center justify-center text-primary-foreground"
     >
       <picture className="absolute inset-0 h-full w-full">
         <source
-          srcSet={join(
-            map(
-              images[currentImage] as string[],
-              (image, index) => `${image} ${widths[index]}w`
-            ),
-            ', '
-          )}
-          sizes="100vw" // Ensure the image scales properly for mobile
+          srcSet={images.map((image, index) => `${image} ${widths[index]}w`).join(', ')}
+          sizes="100vw"
         />
         <img
-          src={images[currentImage][0]}
-          alt="Background image"
+          src={images[currentImage]}
+          alt="Rotating background showcasing the academy"
           className="h-full w-full object-cover object-center transition-opacity duration-1000"
         />
       </picture>
       <div className="absolute flex h-full w-full items-center justify-center bg-black/60 flex-col">
         <picture className="h-auto w-4/5 md:w-3/5 lg:w-1/3">
           <source
-            srcSet={join(
-              map(
-                LogoWhite as string[],
-                (image, index) => `${image} ${widths[index]}w`
-              ),
-              ', '
-            )}
+            srcSet={`${LogoWhite} 480w, ${LogoWhite} 640w, ${LogoWhite} 1280w, ${LogoWhite} 1980w`}
           />
-          <img src={LogoWhite[0]} className="h-auto w-full object-contain" />
+          <img
+            src={LogoWhite}
+            alt="Lintons Hair Academy Logo"
+            className="h-auto w-full object-contain"
+          />
         </picture>
         <a
           href="https://forms.gle/MJreqbGZV4uVXfvMA"
@@ -62,6 +72,6 @@ export function Home() {
         </a>
         <FiChevronDown className="absolute bottom-8 h-12 w-12 md:h-16 md:w-16" />
       </div>
-    </div>
-  )
+    </main>
+  );
 }
