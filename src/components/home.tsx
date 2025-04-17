@@ -1,40 +1,10 @@
-import { useState, useEffect } from 'react';
+import { FiChevronDown } from 'react-icons/fi';
 import LogoWhite from 'assets/images/Hair Academy Logo White.png?w=480;640;1280;1980&format=webp';
 import Image1 from 'assets/images/backdrop.png?w=480;640;1280;1980&format=webp';
-import { FiChevronDown } from 'react-icons/fi';
 
-const images = [Image1];
 const widths = [480, 640, 1280, 1980, 853];
 
 export function Home() {
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    // Preload all images to ensure smooth transitions
-    const preloadImages = () => {
-      images.forEach((image) => {
-        const img = new Image();
-        img.src = image;
-      });
-    };
-
-    preloadImages();
-
-    // Set interval for background image rotation
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
-
-    // Cleanup interval on component unmount
-    return () => {
-      try {
-        clearInterval(interval);
-      } catch (error) {
-        console.error("Error clearing interval:", error);
-      }
-    };
-  }, []);
-
   return (
     <main
       id="home"
@@ -42,12 +12,12 @@ export function Home() {
     >
       <picture className="absolute inset-0 h-full w-full">
         <source
-          srcSet={images.map((image, index) => `${image} ${widths[index]}w`).join(', ')}
+          srcSet={`${Image1} 480w, ${Image1} 640w, ${Image1} 1280w, ${Image1} 1980w`}
           sizes="100vw"
         />
         <img
-          src={images[currentImage]}
-          alt="Rotating background showcasing the academy"
+          src={Image1}
+          alt="Background showcasing the academy"
           className="h-full w-full object-cover object-center transition-opacity duration-1000"
         />
       </picture>
