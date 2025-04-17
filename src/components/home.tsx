@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react'
 import LogoWhite from 'assets/images/Hair Academy Logo White.png?w=480;640;1280;1980&format=webp'
 import Image1 from 'assets/images/backdrop.png?w=480;640;1280;1980&format=webp'
-//import Image2 from 'assets/images/ACD MASTERCLASS 2.png?w=480;640;1280;1980&format=webp'
 import { join, map } from 'lodash-es'
 import { FiChevronDown } from 'react-icons/fi'
 
-const images = [Image1, Image2]
+const images = [Image1]
 const widths = [480, 640, 1280, 1980, 853]
 
 export function Home() {
