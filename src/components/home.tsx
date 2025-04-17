@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import LogoWhite from 'assets/images/Hair Academy Logo White.png?w=480;640;1280;1980&format=webp'
-import Image1 from 'assets/images/backdrop.png?w=480;640;1280;853&format=webp'
+import Image1 from 'assets/images/backdrop.png?w=480;640;1280;1980&format=webp'
 //import Image2 from 'assets/images/ACD MASTERCLASS 2.png?w=480;640;1280;1980&format=webp'
 import { join, map } from 'lodash-es'
 import { FiChevronDown } from 'react-icons/fi'
