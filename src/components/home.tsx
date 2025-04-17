@@ -31,9 +31,11 @@ export function Home() {
             ),
             ', '
           )}
+          sizes="100vw" // Ensure the image scales properly for mobile
         />
         <img
           src={images[currentImage][0]}
+          alt="Background image"
           className="h-full w-full object-cover object-center transition-opacity duration-1000"
         />
       </picture>
