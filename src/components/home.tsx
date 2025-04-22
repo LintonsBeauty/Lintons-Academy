@@ -53,7 +53,7 @@ export function Home() {
           <img src={LogoWhite[0]} className="h-auto w-full object-contain" />
         </picture>
         <a
-          href="https://forms.gle/MJreqbGZV4uVXfvMA"
+          href="https://cloud.lintonsacademy.com/admissions/May-Intake-2025"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 bg-primary text-white px-4 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-lg font-semibold shadow-lg hover:bg-primary-dark transition"
